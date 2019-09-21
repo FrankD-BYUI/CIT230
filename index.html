@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Frank A. Desjardins</title>
-  <link href="css/main.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
   <meta name="description"
     content="Assignment protal for Frank Desjardins in CIT230: Web Frontend Development at Brigham Young University - Idaho">
 </head>
@@ -14,7 +14,7 @@
 <body>
   <header>
     <h1>Frank A. Desjardins</h1>
-    <img src="images/Frank.jpg" alt="photo of Frank">
+    <img src="images/Frank.jpg" alt="photo of Frank (right) and Jazzmine (left)">
 
   </header>
 
@@ -28,9 +28,11 @@
 
   </main>
   <footer>
-    <p>&copy; 2020 | Frank A. Desjardins | Arizona | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
-    <P>Last Updated: </P>
+    <p>&copy; <span id="currentYear"></span> | Frank A. Desjardins | Arizona | <a
+        href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+    <P>Last Updated: <span id="lastUpdate"></span></P>
   </footer>
 </body>
+<script src="js/scripts.js"></script>
 
 </html>
