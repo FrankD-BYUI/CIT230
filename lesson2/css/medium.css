@@ -1,0 +1,13 @@
+@media only screen and (min-width: 32.5em) {
+  body {
+    font-size: 1em;
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  main section {
+    margin: 10px;
+  }
+}
