@@ -1,47 +1,62 @@
+/*color palette:
+  Dark Green: #1B644E
+  Light Green: #4FB760
+  Tan: #D2DEA5
+  Orange: #E0AD6A
+  Purple: #925B70
+*/
+
 body {
-  min-width: 250px;
+  min-width: 16rem;
   font-family: 'Noto Sans', sans-serif;
-  font-size: .8em;
+  font-size: .8rem;
 }
 
 header,
 footer {
-  background: rgb(11, 128, 0);
+  background:#4FB760;
   text-align: center;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 10px;
+  padding: 0.1rem 0.6rem;
+  margin: 0.6rem;
+  border-radius: 0.6rem;
 }
 
 main {
-  margin: 10px;
+  margin: .6rem;
   display: grid;
   grid-template-columns: 1fr;
 }
 
 main section {
   border: solid;
-  padding: 10px;
-  margin-bottom: 10px;
+  padding: 0.6rem;
+  margin-bottom: 0.6rem;
   overflow: hidden;
-  border-radius: 10px;
-  border-color:green;
+  border-radius: 0.6rem;
+  border-color:#1B644E;
 }
 
 main section img{
   width: 96%;
-  margin: 5px;
+  margin: .3rem;
   border-style: solid;
   border-width: 1px;
-  border-color: grey;
+  border-color: #D2DEA5;
 }
 
 footer {
   line-height: 1.2em;
   font-size: .8em;
-  color: white;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Noto Serif', serif;
+}
+
+.section-header {
+  background-color: #1B644E;
+  margin: -1.6rem -.6rem 0rem -.6rem;
+  padding: 1rem .6rem .2rem .6rem;
+  text-align: center;
+  color: white;
 }
