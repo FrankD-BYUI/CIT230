@@ -1,0 +1,11 @@
+/*Inspiration for Nav bar: https://codepen.io/blazzard-jason/pen/rzjEJd*/
+
+@media only screen and (min-width: 60em) {
+    body {
+        font-size: 1.2em;
+      }
+
+    /*nav a {
+        font-size: 1.1rem;
+    }*/
+}

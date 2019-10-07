@@ -1,0 +1,102 @@
+/*Inspiration for Nav bar: https://codepen.io/blazzard-jason/pen/rzjEJd*/
+
+header,
+footer {
+    background: #afd5aa;
+    text-align: center;
+    color: #2d2d2d;
+}
+
+header,
+footer,
+nav,
+main {
+    padding: 0.1rem 0.6rem;
+    margin: 0rem 0.6rem;
+    border-radius: 0.6rem;
+    min-width: 18rem;
+}
+
+nav {
+    background-color: #2d2d2d;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li a {
+    display: block;
+    color: #dadada;
+    text-align: center;
+    padding: 0.75rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #FFDE0C;
+    color: #2d2d2d;
+    border-radius: .6rem;
+}
+
+.active {
+    color: #E3B23C;
+}
+
+body {
+    background-color: #DADADA;
+    min-width: 18rem;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: .8rem;
+}
+
+main img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Noto Serif', serif;
+}
+
+table {
+    width: 100%;
+}
+
+table,
+th,
+td {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+#header-sample{
+    background: #afd5aa;
+    color: #2d2d2d;
+}
+#primary-nav-sample{
+    background-color: #2d2d2d;
+    color: #dadada;
+}
+#hover-nav-sample{
+    background-color: #FFDE0C;
+    color: #2d2d2d;
+}
+#footer-sample{
+    background: #afd5aa;
+    color: #2d2d2d;
+    font-size: .8em;
+}
+
+footer {
+    line-height: 1.2em;
+    font-size: .8em;
+}
