@@ -1,0 +1,32 @@
+/*Inspiration for Nav bar: https://codepen.io/blazzard-jason/pen/rzjEJd*/
+
+@media only screen and (min-width: 32.5em) {
+    header {
+        font-size: 1rem;
+    }
+
+    header img {
+        width: 100%;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav ul li:first-child {
+        display: none;
+    }
+
+    nav ul li {
+        display: flex;
+    }
+
+    body {
+        font-size: 1em;
+    }
+}
