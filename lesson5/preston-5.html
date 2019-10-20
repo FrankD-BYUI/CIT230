@@ -13,48 +13,91 @@
   <link rel="stylesheet" href="css/large.css">
   <link rel="shortcut icon" href="favicon.ico">
   <meta name="description"
-    content="Lesson 3: Preston page for Frank Desjardins in CIT230: Web Frontend Development at Brigham Young University - Idaho">
+    content="Lesson 5: Preston page for Frank Desjardins in CIT230: Web Frontend Development at Brigham Young University - Idaho">
 </head>
 
 <body>
+  <aside id="pancakes" style="display: none;"">
+    <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
+  </aside>
+  
   <header>
     <picture>
-      <img src="images/your-weather-center.png" alt="Your Weather dot Center logo">
+      <img src=" images/your-weather-center.png" alt="Your Weather dot Center logo">
     </picture>
     <section class="headings">
       <h1>YourWeather.Center</h1>
       <div class="motto">Your one stop center for Idaho weather</div>
     </section>
+    </header>
 
-  </header>
+    <nav>
+      <ul id="nav-menu" class="navigation">
+        <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#" class="active">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
 
-  <nav>
-    <ul id="nav-menu" class="navigation">
-      <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-      <li><a href="#">Home</a></li>
-      <li><a href="#" class="active">Preston</a></li>
-      <li><a href="#">Soda Springs</a></li>
-      <li><a href="#">Fish Haven</a></li>
-      <li><a href="#">Storm Center</a></li>
-      <li><a href="#">Gallery</a></li>
-    </ul>
-  </nav>
+    <main>
+      <h2>Preston Idaho</h2>
+      <div class="herodiv">
+        <img src="images/prestion-idaho-hero.jpg" alt="Preston Idaho" id="heroimg">
+        <section class="weather-summary">
+          <h3>Weather Summary</h3>
+          <div>Currently: <span id="current-condition">Sunny</span></div>
+          <div>High: <span id="hight-temp">76 &degF</span></div>
+          <div>Wind Chill: <span id="wind-chill">&degF</span></div>
+          <div>Humidity: <span id="humidity">69&#37</span></div>
+          <div>Wind Speed: <span id="wind-speed">5 mph</span></div>
+        </section>
+      </div>
 
-  <main>
-    <h2>Preston Idaho</h2>
-    <div class="contentbox">Hero w/weather summary</div>
-    <div class="contentbox">5 Day Forecast</div>
-    <div class="contentbox">Article</div>
-    <div class="contentbox">Contact Information</div>
-  </main>
+      <div class="five-day">
+        <h3>5 Day Forecast</h3>
+        <table class="five-day-table">
+          <tr>
+            <th>Mon</th>
+            <th>Tues</th>
+            <th>Wed</th>
+            <th>Thurs</th>
+            <th>Fri</th>
+          </tr>
+          <tr>
+            <td><img src="images/sunny.png" alt="Sun" </td> <td><img src="images/sunny.png" alt="Sun" </td> <td><img
+                src="images/sunny.png" alt="Sun" </td> <td><img src="images/sunny.png" alt="Sun" </td> <td><img
+                src="images/sunny.png" alt="Sun" </td> </tr> <tr>
+            <td>84 &degF</td>
+            <td>83 &degF</td>
+            <td>85 &degF</td>
+            <td>88 &degF</td>
+            <td>88 &degF</td>
+          </tr>
+        </table>
+      </div>
 
-  <footer>
-    <p>&copy; <span id="currentYear"></span> | <a href="../index.html">Frank A. Desjardins</a> | Arizona | <a
-        href="https://www.byui.edu/online">BYUI Online Learning</a></p>
-    <P>Today's Date: <span id="currentDate"></span></P>
-    <P>Last Updated: <span id="lastUpdate"></span></P>
-  </footer>
-  <script src="js/scripts.js"></script>
+      <article class="town-article">
+        <img src="images/town-article-image.jpg" alt="Placeholder Image" id="town-article-image">
+        <div>
+          <h3>Exciting Article About Prestion</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Enim sit amet venenatis urna cursus eget nunc. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Lectus proin nibh nisl condimentum id venenatis a. Ac feugiat sed lectus vestibulum. Blandit massa enim nec dui nunc mattis enim ut. Vitae elementum curabitur vitae nunc sed velit dignissim. Mauris augue neque gravida in fermentum. Amet consectetur adipiscing elit ut aliquam purus sit amet luctus. Amet porttitor eget dolor morbi non arcu risus quis varius. Metus dictum at tempor commodo ullamcorper a lacus vestibulum. Pretium quam vulputate dignissim suspendisse in est ante in nibh. Amet facilisis magna etiam tempor orci eu lobortis elementum nibh. Nunc pulvinar sapien et ligula. Pellentesque elit eget gravida cum sociis natoque penatibus et. In metus vulputate eu scelerisque felis imperdiet. Sapien eget mi proin sed libero enim. Velit euismod in pellentesque massa placerat duis ultricies. A pellentesque sit amet porttitoreget dolor morbi. Metus dictum at tempor commodo ullamcorper a lacus vestibulum.</p>
+        </div>
+      </article>
+      <div class="contentbox">Contact Information</div>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="currentYear"></span> | <a href="../index.html">Frank A. Desjardins</a> | Arizona | <a
+          href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+      <P>Today's Date: <span id="currentDate"></span> |
+        Last Updated: <span id="lastUpdate"></span></P>
+    </footer>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

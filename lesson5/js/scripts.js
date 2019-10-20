@@ -40,6 +40,13 @@ let fullCurrentDate = currentDay + ", " + currentDate + " " + currentMonth + " "
 document.getElementById('currentDate').innerHTML = fullCurrentDate;
 
 /********
+ * This chunk toggles the pancake notice on Fridays
+ ********/
+if (currentDay == "Friday") {
+  document.getElementById("pancakes").style.display = "block"
+}
+
+/********
  * This function opens and closes the menu in mobile viewport
  ********/
 function toggleMenu() {

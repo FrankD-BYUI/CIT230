@@ -1,6 +1,11 @@
 /*Inspiration for Nav bar: https://codepen.io/blazzard-jason/pen/rzjEJd
                       and: https://codepen.io/blazzard-jason/pen/gmGxaj/*/
 
+#pancakes {
+    background: #FFDE0C;
+    border: solid #ffde0c 1px;
+}
+
 header,
 footer {
     background: #afd5aa;
@@ -91,10 +96,14 @@ body {
     min-width: 18rem;
     font-family: 'Noto Sans', sans-serif;
     font-size: .8rem;
-    margin: 0 auto;
     width: 100%;
-    max-width: 1200px;
     text-align: center;
+}
+
+main,
+footer {
+    max-width: 900px;
+    margin: auto;
 }
 
 h1,
@@ -119,4 +128,48 @@ footer {
     line-height: 1.2em;
     font-size: .8em;
     text-align: center;
+}
+
+.herodiv {
+    position: relative;
+}
+
+#heroimg {
+    max-width: 96%;
+}
+
+.weather-summary {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    background: #afd5aa;
+    padding: .5em;
+    border: solid 1px #2d2d2d;
+    opacity: .75;
+    box-shadow: 0 0 10px #2d2d2d;
+}
+
+.weather-summary h3 {
+    margin: 0;
+    border-bottom: black 1px solid;
+    padding-bottom: .25em;
+    margin-bottom: .25em;
+}
+
+.five-day {
+    display: none;
+}
+
+.town-article {
+    border: solid 1px rgba(45, 45, 45, .3);
+    margin: 1em;
+    padding: 1em;
+    text-align: left;
+    background: rgba(175, 213, 170, .3);
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#town-article-image {
+    max-width: 100%;
 }
