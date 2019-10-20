@@ -61,4 +61,13 @@
         float: right;
         margin: 0 0 1em 1em;
     }
+
+    .contact-info {
+        column-count: 2;
+    }
+
+    #contact-map {
+        display: block;
+        max-width: 100%;
+    }
 }
