@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lazy Load</title>
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="css/lazyload.css">
+  <meta name="description"
+    content="Lesson 7: Lazy Load demonstration page for Frank Desjardins in CIT230: Web Frontend Development at Brigham Young University - Idaho">
+</head>
+
+<body>
+  <h1>Progressive Loading of Images:</h1>
+  <img src="images/placeholder.png" data-src="https://placekitten.com/300/400" alt="a random image">
+  <img src="images/placeholder.png" data-src="https://baconmockup.com/300/400" alt="a random image">
+  <img src="images/placeholder.png" data-src="https://placebeard.it/300/400" alt="a random image">
+  <img src="images/placeholder.png" data-src="http://lorempixel.com/300/400" alt="a random image">
+  <img src="images/placeholder.png" data-src="http://placeimg.com/300/400/any" alt="a random image">
+  <img src="images/placeholder.png" data-src="https://loremflickr.com/300/400" alt="a random image">
+
+
+  <script src="js/lazyload.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: [
+          "Noto Sans", "Noto Serif"
+        ]
+      }
+    });
+  </script>
+</body>
+
+</html>
