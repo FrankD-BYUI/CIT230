@@ -6,7 +6,7 @@
     padding: 1em;
 }
 
-#pancakes p{
+#pancakes p {
     margin: 0;
 }
 
@@ -46,7 +46,7 @@ header,
 footer,
 nav,
 main {
-    
+
     min-width: 18rem;
 }
 
@@ -189,7 +189,7 @@ footer p {
     max-width: 100%;
     text-align: left;
     column-count: 1;
-    margin:0;
+    margin: 0;
     color: white;
 }
 
@@ -201,9 +201,14 @@ footer p {
     display: none;
 }
 
-#address, 
+#address,
 #phone-email {
     margin-bottom: 1em;
+}
+
+figure {
+    margin: 0;
+    padding: 0 10px;
 }
 
 .gallery {
@@ -211,20 +216,20 @@ footer p {
     grid-template-columns: 1fr;
 }
 
-.gal-img{
+.gal-img {
     max-width: 100%;
 }
 
 .gallery figcaption {
-    font-size: .9rem;
-    text-align: left;
+    font-size: .9em;
+    padding-bottom: 10px;
 }
 
 img[data-src] {
-	filter: blur(0.2em);
+    filter: blur(0.2em);
 }
 
 img {
-	filter: blur(0em);
-	transition: filter 0.5s;
+    filter: blur(0em);
+    transition: filter 0.5s;
 }

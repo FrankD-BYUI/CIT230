@@ -14,4 +14,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .gal-img:hover {
+    box-shadow: 1px 1px 5px;
+  }
 }
