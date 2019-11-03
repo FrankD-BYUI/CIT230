@@ -70,4 +70,9 @@
         display: block;
         max-width: 100%;
     }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }

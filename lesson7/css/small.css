@@ -206,3 +206,25 @@ footer p {
     margin-bottom: 1em;
 }
 
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.gal-img{
+    max-width: 100%;
+}
+
+.gallery figcaption {
+    font-size: .9rem;
+    text-align: left;
+}
+
+img[data-src] {
+	filter: blur(0.2em);
+}
+
+img {
+	filter: blur(0em);
+	transition: filter 0.5s;
+}
