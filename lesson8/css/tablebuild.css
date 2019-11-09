@@ -29,6 +29,10 @@ tfoot {
   font-size: .6em;
 }
 
+tfoot td {
+  padding: .6em;
+}
+
 tbody {
   background: #e7f0ed;
 }
