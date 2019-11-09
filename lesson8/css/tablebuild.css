@@ -4,7 +4,8 @@ body {
 }
 
 table {
-  margin: auto;
+  margin: 1em auto;
+  box-shadow: #628ca6 10px 10px 10px;
 }
 
 table, th, td, caption{
