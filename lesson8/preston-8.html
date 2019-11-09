@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Prestion Idaho Weather</title>
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <meta name="description"
+    content="Lesson 7: Preston page for Frank Desjardins in CIT230: Web Frontend Development at Brigham Young University - Idaho">
+</head>
+
+<body>
+  <aside id="pancakes" style="display: none;">
+    <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+  </aside>
+
+  <header>
+    <picture>
+      <img src=" images/your-weather-center.png" alt="Your Weather dot Center logo">
+    </picture>
+    <section class="headings">
+      <h1>YourWeather.Center</h1>
+      <div class="motto">Your one stop center for Idaho weather</div>
+    </section>
+  </header>
+
+  <nav>
+    <ul id="nav-menu" class="navigation">
+      <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#" class="active">Preston</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a href="#">Fish Haven</a></li>
+      <li><a href="#">Storm Center</a></li>
+      <li><a href="gallery-7.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Preston Idaho</h2>
+    <div class="herodiv">
+      <picture>
+        <source srcset="images/cit230-image-franklin-900x436.jpg" media="(min-width: 750px)">
+        <source srcset="images/cit230-image-franklin-750x364.jpg" media="(min-width: 520px)">
+        <img src="images/cit230-image-franklin-500x242.jpg" alt="Preston Idaho" id="heroimg">
+      </picture>
+    
+      <section class="weather-summary">
+        <h3>Weather Summary</h3>
+        <div>Currently: <span id="current-condition">Sunny</span></div>
+        <div>High: <span id="high-temp">49</span> &deg;F</div>
+        <div>Wind Chill: <span id="wind-chill"></span>&deg;F</div>
+        <div>Humidity: <span id="humidity">69</span>&#37;</div>
+        <div>Wind Speed: <span id="wind-speed">5</span> mph</div>
+      </section>
+    </div>
+
+    <div class="five-day">
+      <h3>5 Day Forecast</h3>
+      <table class="five-day-table">
+        <tr>
+          <th>Mon</th>
+          <th>Tues</th>
+          <th>Wed</th>
+          <th>Thurs</th>
+          <th>Fri</th>
+        </tr>
+        <tr>
+          <td><img src="images/sunny.png" alt="Sun"></td>
+          <td><img src="images/sunny.png" alt="Sun"></td>
+          <td><img src="images/sunny.png" alt="Sun"></td>
+          <td><img src="images/sunny.png" alt="Sun"></td>
+          <td><img src="images/sunny.png" alt="Sun"></td>
+        </tr>
+        <tr>
+          <td>84 &deg;F</td>
+          <td>83 &deg;F</td>
+          <td>85 &deg;F</td>
+          <td>88 &deg;F</td>
+          <td>88 &deg;F</td>
+        </tr>
+      </table>
+    </div>
+
+    <article class="town-article">
+      <img src="images/town-article-image.jpg" alt="Placeholder Image" id="town-article-image">
+      <div>
+        <h3>Exciting Article About Prestion</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Enim sit amet venenatis urna cursus eget nunc. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Lectus proin nibh nisl condimentum id venenatis a. Ac feugiat sed lectus vestibulum. Blandit massa enim nec dui nunc mattis enim ut. Vitae elementum curabitur vitae nunc sed velit dignissim. Mauris augue neque gravida in fermentum. Amet consectetur adipiscing elit ut aliquam purus sit amet luctus. Amet porttitor eget dolor morbi non arcu risus quis varius. Metus dictum at tempor commodo ullamcorper a lacus vestibulum. Pretium quam vulputate dignissim suspendisse in est ante in nibh. Amet facilisis magna etiam tempor orci eu lobortis elementum nibh. Nunc pulvinar sapien et ligula. Pellentesque elit eget gravida cum sociis natoque penatibus et. In metus vulputate eu scelerisque felis imperdiet. Sapien eget mi proin sed libero enim. Velit euismod in pellentesque massa placerat duis ultricies. A pellentesque sit amet porttitoreget dolor morbi. Metus dictum at tempor commodo ullamcorper a lacus vestibulum.</p>
+      </div>
+    </article>
+
+    <div class="contact-info">
+      <img src="images/map.jpg" alt="Idaho map" id="contact-map">
+      <div id="contact-details">
+        <h4>YourWeather.Center</h4>
+        <div id="address">
+          <p>310 N State St</p>
+          <p>Preston, ID 83263</p>
+        </div>
+        <div id="phone-email">
+          <p>&#9742; (208) 555-1234</p>
+          <p>&#9993; contact@YourWeather.Center</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentYear"></span> | <a href="../index.html">Frank A. Desjardins</a> | Arizona | <a
+        href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+    <P>Today's Date: <span id="currentDate"></span> |
+      Last Updated: <span id="lastUpdate"></span></P>
+  </footer>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Noto Sans", "Noto Serif"]
+      }
+    });
+  </script>
+  <script src="js/scripts.js"></script>
+  <script src="js/weather.js"></script>
+</body>
+
+</html>

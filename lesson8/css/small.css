@@ -1,0 +1,235 @@
+/*Inspiration for Nav bar: https://codepen.io/blazzard-jason/pen/rzjEJd
+                      and: https://codepen.io/blazzard-jason/pen/gmGxaj/*/
+
+#pancakes {
+    background: #FFDE0C;
+    padding: 1em;
+}
+
+#pancakes p {
+    margin: 0;
+}
+
+header,
+footer {
+    background: #afd5aa;
+    color: #2d2d2d;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .7rem;
+}
+
+header img {
+    width: 80px;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+}
+
+.headings h1 {
+    margin: 0 0 0 1em;
+}
+
+.motto {
+    font-style: italic;
+    font-size: .9em;
+    margin-left: 1em;
+}
+
+header,
+footer,
+nav,
+main {
+
+    min-width: 18rem;
+}
+
+nav {
+    background-color: #2d2d2d;
+    text-align: center;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+nav ul li:first-child {
+    display: block;
+}
+
+nav ul li {
+    display: none;
+}
+
+nav ul li a {
+    display: block;
+    color: #dadada;
+    text-align: center;
+    padding: 0.75rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #FFDE0C;
+    color: #2d2d2d;
+}
+
+.show-menu li {
+    display: block;
+}
+
+.active {
+    color: #E3B23C;
+}
+
+body {
+    background-color: #DADADA;
+    min-width: 18rem;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: .8rem;
+    width: 100%;
+    text-align: center;
+}
+
+main,
+footer {
+    max-width: 900px;
+    margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Noto Serif', serif;
+}
+
+.contentbox {
+    border: 1px dotted;
+    margin: 1em;
+    padding: 1em;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: #e3b23c;
+}
+
+footer {
+    line-height: 1.2em;
+    font-size: .8em;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    padding: 1em;
+}
+
+.herodiv {
+    position: relative;
+}
+
+#heroimg {
+    max-width: 96%;
+}
+
+.weather-summary {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    background: #afd5aa;
+    padding: .5em;
+    border: solid 1px #2d2d2d;
+    opacity: .75;
+    box-shadow: 0 0 10px #2d2d2d;
+}
+
+.weather-summary h3 {
+    margin: 0;
+    border-bottom: black 1px solid;
+    padding-bottom: .25em;
+    margin-bottom: .25em;
+}
+
+.five-day {
+    display: none;
+}
+
+.town-article {
+    border: solid 1px rgba(45, 45, 45, .3);
+    margin: 1em;
+    padding: 1em;
+    text-align: left;
+    background: rgba(175, 213, 170, .3);
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#town-article-image {
+    max-width: 100%;
+}
+
+.contact-info {
+    border: solid 1px rgba(45, 45, 45, .3);
+    padding: 1em;
+    background: rgba(45, 45, 45, .6);
+    max-width: 100%;
+    text-align: left;
+    column-count: 1;
+    margin: 0;
+    color: white;
+}
+
+.contact-info p {
+    margin: 0;
+}
+
+#contact-map {
+    display: none;
+}
+
+#address,
+#phone-email {
+    margin-bottom: 1em;
+}
+
+figure {
+    margin: 0;
+    padding: 0 10px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.gal-img {
+    max-width: 100%;
+}
+
+.gallery figcaption {
+    font-size: .9em;
+    padding-bottom: 10px;
+}
+
+img[data-src] {
+    filter: blur(0.2em);
+}
+
+img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}

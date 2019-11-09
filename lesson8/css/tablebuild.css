@@ -1,0 +1,42 @@
+body {
+  font-family: Ubuntu, sans-serif;
+  text-align: center;
+}
+
+table {
+  margin: auto;
+}
+
+table, th, td, caption{
+  border: 1px solid lightgray;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: .5em;
+}
+
+thead h2 {
+  margin: 0;
+}
+
+thead, tfoot{
+  background: #7fb9c2;
+}
+
+tfoot {
+  font-size: .6em;
+}
+
+tbody {
+  background: #e7f0ed;
+}
+
+tbody tr:nth-child(even) {
+  background: #e7ffed;
+}
+
+.different {
+  background: #628ca6;
+  color: white;
+}
