@@ -17,4 +17,9 @@
   .gal-img:hover {
     box-shadow: 1px 1px 5px;
   }
+
+  form label.form-sbs {
+    padding: .2em;
+  }
+
 }
