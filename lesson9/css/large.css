@@ -1,0 +1,25 @@
+/*Inspiration for Nav bar: https://codepen.io/blazzard-jason/pen/rzjEJd*/
+
+@media only screen and (min-width: 60em) {
+
+  nav ul li a {
+    padding: 0.25rem;
+  }
+
+  body {
+    font-size: 1.1em;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .gal-img:hover {
+    box-shadow: 1px 1px 5px;
+  }
+
+  form label.form-sbs {
+    padding: .2em;
+  }
+
+}
