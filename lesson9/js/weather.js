@@ -1,5 +1,5 @@
 /********
- * This chunk calculates windchill
+ * This code calculates windchill for use on the town pages
  ********/
 var temp = parseFloat(document.getElementById("high-temp").textContent);
 var windSpeed = parseFloat(document.getElementById('wind-speed').textContent);

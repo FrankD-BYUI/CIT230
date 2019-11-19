@@ -16,10 +16,6 @@
 </head>
 
 <body>
-    <aside id="pancakes" style="display: none;">
-        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
-    </aside>
-
     <header>
         <picture>
             <img src=" images/your-weather-center.png" alt="Your Weather dot Center logo">
@@ -33,30 +29,33 @@
     <nav>
         <ul id="nav-menu" class="navigation">
             <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="preston-8.html">Preston</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="stormcenter.html" class="active">Storm Center</a></li>
-            <li><a href="gallery-8.html">Gallery</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
 
     <main>
-        <h2>Report Unusual Weather Events</h2>
+        <h2>Storm Center</h2>
+        <h3>Report Unusual Weather Events</h3>
         <form method="get" action="thanks.html">
             <fieldset>
                 <legend>Contact Information</legend>
-                <label class="form-top">Full name<span class="form-required">*</span><input type="text" name="name" required
-                        pattern="[A-Za-za ]{5,}"></label>
+                <label class="form-top">Full name<span class="form-required">*</span><input type="text" name="name"
+                        required pattern="[A-Za-z ]{5,}"></label>
                 <label class="form-top">Email<input type="email" name="email"
                         placeholder="john.doe@example.com"></label>
-                <label class="form-top">Phone number<span class="form-required">*</span><input type="tel" name="phone" required></label>
-                <label class="form-top">Zip code<span class="form-required">*</span><input type="number" name="zip" required></label>
+                <label class="form-top">Phone number<span class="form-required">*</span><input type="tel" name="phone"
+                        required></label>
+                <label class="form-top">Zip code<span class="form-required">*</span><input type="number" name="zip"
+                        required></label>
                 <p class="asterisk"><span class="form-required">*</span>Denotes required field</p>
             </fieldset>
             <fieldset>
-                    <legend>Event Details</legend>
+                <legend>Event Details</legend>
                 <label class="form-top">Storm date<input type="date" name="date"></label>
                 <label class="form-top">Storm type<input list="storm-type" name="storm-type"></label>
                 <datalist id="storm-type">
@@ -79,7 +78,9 @@
                 <label class="form-sbs"><input type="radio" name="danger" value="yes"> Yes</label>
                 <label class="form-sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>
                 <label class="form-sbs"><input type="radio" name="danger" value="no"> No</label>
-                <label class="form-top">Comments<input type="text"></label>
+                <label class="form-top">Comments<br>
+                    <textarea name="comments" cols="50" rows="4"></textarea>
+                </label>
             </fieldset>
             <input type="submit" value="Report Event" class="formSubmit">
         </form>
