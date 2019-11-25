@@ -1,0 +1,51 @@
+/*Inspiration for Nav bar: https://codepen.io/blazzard-jason/pen/rzjEJd*/
+
+@media only screen and (min-width: 60em) {
+
+  nav ul li a {
+    padding: 0.25rem;
+  }
+
+  body {
+    font-size: 1.1em;
+  }
+
+  /* --------- GALLERY ---------- */
+
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .gal-img:hover {
+    box-shadow: 1px 1px 5px;
+  }
+
+  /* --------- FORM ---------- */
+
+  form fieldset {
+    max-width: 520px;
+  }
+
+  form label.form-sbs {
+    padding: .2em;
+  }
+
+  /* --------- HOME PAGE ---------- */
+
+  .town-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .town-cards .container {
+    display: block;
+  }
+
+  .town-cards img {
+    max-width: 100%;
+  }
+  
+  .textDiv {
+    width: 100%;
+}
+}
