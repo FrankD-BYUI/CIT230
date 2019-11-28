@@ -1,0 +1,110 @@
+/*Inspiration for Nav bar: https://codepen.io/blazzard-jason/pen/rzjEJd*/
+
+@media only screen and (min-width: 32.5em) {
+    header {
+        font-size: 1rem;
+    }
+
+    header img {
+        width: 100%;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav ul li:first-child {
+        display: none;
+    }
+
+    nav ul li {
+        display: flex;
+    }
+
+    body {
+        font-size: 1em;
+    }
+
+    /********** TOWN PAGE ***********/
+
+    .five-day {
+        display: block;
+        margin: auto;
+    }
+
+    .five-day-table {
+        border-collapse: collapse;
+        border: solid 1px;
+        margin: auto;
+
+    }
+
+    .five-day-table th {
+        border: solid 1px #2d2d2d;
+        background: #afd5aa;
+    }
+
+    .five-day-table td {
+        border-right: solid 1px #2d2d2d;
+    }
+
+    .five-day-table img {
+        padding: 7px;
+    }
+
+    .town-article {
+        display: block;
+    }
+
+    #town-article-image {
+        max-width: 50%;
+        float: right;
+        margin: 0 0 1em 1em;
+    }
+
+    .contact-info {
+        column-count: 2;
+    }
+
+    #contact-map {
+        display: block;
+        max-width: 100%;
+    }
+
+    /* --------- GALLERY ---------- */
+
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* --------- FORM ---------- */
+
+    form fieldset {
+        max-width: 460px;
+    }
+
+    /* --------- HOME PAGE ---------- */
+
+    .town-cards .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .town-cards img {
+        max-width: 48%;
+    }
+
+    .town-cards .container:nth-child(odd){
+        flex-direction: row-reverse;
+    }
+
+    .textDiv {
+        width: 50%;
+    }
+}
