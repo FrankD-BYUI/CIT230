@@ -52,3 +52,10 @@ if (currentDay == "Friday") {
 function toggleMenu() {
   document.getElementById("nav-menu").classList.toggle("show-menu");
 }
+
+/********
+ * This function updates the value of the range slider on a form
+ ********/
+function updateRange(value) {
+  document.getElementById("severity-value").textContent = value;
+}

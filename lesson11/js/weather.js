@@ -11,6 +11,15 @@ fetch(apiURLCurrent)
     document.getElementById('high-temp').textContent = jsObject.main.temp_max;
     document.getElementById('humidity').textContent = jsObject.main.humidity;
     document.getElementById('wind-speed').textContent = jsObject.wind.speed;
+
+    var temp = jsObject.main.temp;
+    var windSpeed = jsObject.wind.speed;
+    var windChill = 0
+
+    if (temp <= 50 && windSpeed >= 3) {
+      windChill = 35.74 + (0.6215 * temp) - (35.75 * Math.pow(windSpeed, 0.16)) + (0.4275 * temp * Math.pow(windSpeed, 0.16));
+      document.getElementById('wind-chill').textContent = Math.round(windChill);
+    }
   });
 
 /********
@@ -48,17 +57,3 @@ fetch(apiURLForecast)
       }
     }
   });
-
-
-
-/********
- * This code calculates windchill for use on the town pages
- ********/
-var temp = parseFloat(document.getElementById("high-temp").textContent);
-var windSpeed = parseFloat(document.getElementById('wind-speed').textContent);
-var windChill = 0
-
-if (temp <= 50 && windSpeed >= 3) {
-  windChill = 35.74 + (0.6215 * temp) - (35.75 * Math.pow(windSpeed, 0.16)) + (0.4275 * temp * Math.pow(windSpeed, 0.16));
-  document.getElementById('wind-chill').textContent = Math.round(windChill);
-}

@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Prestion Idaho Weather</title>
+    <title>Storm Center</title>
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <link rel="shortcut icon" href="favicon.ico">
     <meta name="description"
-        content="Lesson 7: Preston page for Frank Desjardins in CIT230: Web Frontend Development at Brigham Young University - Idaho">
+        content="Storm Center page for Frank Desjardins in CIT230: Web Frontend Development at Brigham Young University - Idaho">
 </head>
 
 <body>
@@ -65,7 +65,8 @@
                     <option value="Thunderstorm"></option>
                     <option value="Tornado"></option>
                 </datalist>
-                <label class="form-top">Storm severity<input type="range" name="severity" min="1" max="10"></label>
+                <label class="form-top">Storm severity: <span id='severity-value'>5</span><input type="range"
+                        name="severity" min="1" max="10" value="5" onchange="updateRange(this.value);"></label>
                 <label class="form-top">Storm region
                     <select name="region">
                         <option value="" disabled selected="selected">Select Region...</option>
