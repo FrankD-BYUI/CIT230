@@ -39,7 +39,7 @@ const apiURLForecast = 'https://api.openweathermap.org/data/2.5/forecast?id=' + 
 fetch(apiURLForecast)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
+    //console.log(jsObject);
     //const weatherList = jsonObject.list;
 
     let day = 1;
@@ -63,6 +63,38 @@ fetch(apiURLForecast)
 
 
         day++;
+      }
+    }
+  });
+
+
+/********
+ * This code uses Town Data file to display upcoming events
+ ********/
+var townName = ""
+if (document.getElementById('town-name').textContent.includes("Preston")) {
+  townName = "Preston"
+} else if (document.getElementById('town-name').textContent.includes("Soda Springs")) {
+  townName = "Soda Springs"
+} else if (document.getElementById('town-name').textContent.includes("Fish Haven")) {
+  townName = "Fish Haven"
+}
+
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    //console.log(jsObject);
+    const towns = jsonObject['towns'];
+    for (let i = 0; i < towns.length; i++) {
+      if (towns[i].name == townName) {
+        for (let j = 0; j < towns[i].events.length; j++) {
+          let div = document.createElement('div');
+          div.textContent = towns[i].events[j]
+          document.querySelector('div.events').appendChild(div);
+        }
       }
     }
   });
