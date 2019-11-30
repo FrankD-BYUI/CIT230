@@ -2,7 +2,16 @@
  * This code uses the OpenWeatherMap API to pull 
  * real time weather data for use on the town pages
  ********/
-const apiURLCurrent = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=c03799aebfe07c839f8755c32064fd53'
+var townID = 0
+if (document.getElementById('town-name').textContent.includes("Preston")) {
+  townID = 5604473
+} else if (document.getElementById('town-name').textContent.includes("Soda Springs")) {
+  townID = 5607916
+} else if (document.getElementById('town-name').textContent.includes("Fish Haven")) {
+  townID = 5585010
+}
+
+const apiURLCurrent = 'https://api.openweathermap.org/data/2.5/weather?id=' + townID + '&units=imperial&APPID=c03799aebfe07c839f8755c32064fd53'
 fetch(apiURLCurrent)
   .then((response) => response.json())
   .then((jsObject) => {
@@ -26,7 +35,7 @@ fetch(apiURLCurrent)
  * This code uses the OpenWeatherMap API to pull 
  * weather forcast data for use on the town pages
  ********/
-const apiURLForecast = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=c03799aebfe07c839f8755c32064fd53'
+const apiURLForecast = 'https://api.openweathermap.org/data/2.5/forecast?id=' + townID + '&units=imperial&APPID=c03799aebfe07c839f8755c32064fd53'
 fetch(apiURLForecast)
   .then((response) => response.json())
   .then((jsObject) => {
