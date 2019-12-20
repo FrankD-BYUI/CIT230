@@ -36,4 +36,9 @@
     display: block;
     min-width: 100px;
   }
+
+  /************* General things *************/
+  .content-box {
+    margin: .5em;
+  }
 }

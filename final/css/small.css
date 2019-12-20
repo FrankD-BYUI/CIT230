@@ -63,6 +63,7 @@ nav a:hover {
 
 .show-menu li:first-child {
   padding-bottom: 0px;
+  transition: all 0.5s ease-in-out;
 }
 
 .active {
@@ -77,7 +78,7 @@ nav a:hover {
   content: "> "
 }
 
-/************* BODY *************/
+/************* General things *************/
 
 body {
   font-family: 'Lato', sans-serif;
@@ -85,6 +86,30 @@ body {
   width: 100%;
   text-align: center;
   background-color: #f4efeb;
+  min-width: 300px;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+}
+
+.content-box {
+  background-color: #f5e6ad;
+  border: solid #c7a633 1px;
+  margin: .25em 0;
+}
+
+button {
+  background-color: #d7d1fd;
+  border: frame #d7d1fd 2px;
+  margin: 0;
+  padding: .25em;
+}
+
+button:hover {
+  background-color: #ac9fff;
+  border: frame #ac9fff 2px;
 }
 
 /************* FOOTER *************/
@@ -119,4 +144,11 @@ h6 {
 
 .carousel-wrapper {
   display: none;
+}
+
+/************* HOME PAGE *************/
+
+.home-hero {
+  max-width: 100%;
+  margin: auto;
 }
