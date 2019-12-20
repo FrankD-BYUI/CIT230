@@ -1,0 +1,208 @@
+/************* HEADER *************/
+
+header {
+  display: flex;
+  background-color: #d7d1fd;
+  justify-content: left;
+  margin-right: 70px;
+  min-height: 93px;
+}
+
+header img {
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/************* NAV BAR *************/
+
+nav {
+  background-color: #c2ad78;
+  padding: 0;
+  z-index: 99;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+nav ul li:first-child {
+  display: block;
+  padding-top: 27.5px;
+  padding-bottom: 27.5px;
+}
+
+nav ul li {
+  display: none;
+}
+
+nav ul li a {
+  display: block;
+  color: black;
+  text-align: right;
+  padding: 0.75rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #f5e6ad;
+}
+
+.show-menu li {
+  display: block;
+  min-width: 100px;
+}
+
+.show-menu li:first-child {
+  padding-bottom: 0px;
+}
+
+.active {
+  font-weight: 700;
+}
+
+.active::after {
+  content: " <"
+}
+
+.active::before {
+  content: "> "
+}
+
+/************* BODY *************/
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: .8rem;
+  width: 100%;
+  text-align: center;
+  background-color: #f4efeb;
+}
+
+/************* FOOTER *************/
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;
+}
+
+footer {
+  background-color: #d7d1fd;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Cinzel', serif;
+}
+
+/*
+.carousel-wrapper {
+  height: 400px;
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.carousel-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 50px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 12px;
+}
+
+.arrow-prev {
+  left: -30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(135deg);
+}
+
+.arrow-next {
+  right: -30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.light {
+  color: white;
+}
+
+@media (max-width: 480px) {
+
+  .arrow,
+  .light .arrow {
+    background-size: 10px;
+    background-position: 10px 50%;
+  }
+}
+*/
+
+/*Select every element*/
+/*
+[id^="item"] {
+  display: none;
+}
+
+.item-1 {
+  z-index: 2;
+  opacity: 1;
+  background: url('https://static.pexels.com/photos/6526/sea-beach-holiday-vacation-large.jpg');
+  background-size: cover;
+}
+
+.item-2 {
+  background: url('https://static.pexels.com/photos/6506/alcohol-bar-drinks-party-large.jpg');
+  background-size: cover;
+}
+
+.item-3 {
+  background: url('https://static.pexels.com/photos/6529/lake-kajak-kayak-large.jpg');
+  background-size: cover;
+}
+
+*:target~.item-1 {
+  opacity: 0;
+}
+
+#item-1:target~.item-1 {
+  opacity: 1;
+}
+
+#item-2:target~.item-2,
+#item-3:target~.item-3 {
+  z-index: 3;
+  opacity: 1;
+}
+*/

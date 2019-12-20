@@ -1,0 +1,39 @@
+@media only screen and (min-width: 32.5em) {
+  
+  /************* HEADER *************/
+
+  header {
+    justify-content: center;
+    margin-right: 0;
+    min-height: 0;
+  }
+
+  /************* NAV BAR *************/
+  
+  nav {
+    position: relative;
+    max-width: 100%;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav ul li:first-child {
+    display: none;
+  }
+
+  nav ul li {
+    display: flex;
+  }
+
+  body {
+    font-size: 1em;
+  }
+
+  .show-menu li {
+    display: block;
+    min-width: 100px;
+  }
+}
