@@ -107,14 +107,14 @@ main {
 
 button {
   background-color: #d7d1fd;
-  border: frame #d7d1fd 2px;
+  border: outset #d7d1fd 2px;
   margin: 0;
   padding: .25em;
 }
 
 button:hover {
   background-color: #ac9fff;
-  border: frame #ac9fff 2px;
+  border: outset #ac9fff 2px;
 }
 
 /************* FOOTER *************/
