@@ -100,6 +100,11 @@ main {
   margin: .25em 0;
 }
 
+.left-aligned {
+  text-align: left;
+  padding-left: 1em;
+}
+
 button {
   background-color: #d7d1fd;
   border: frame #d7d1fd 2px;
@@ -159,11 +164,6 @@ h6 {
 }
 
 /************* CONTACT PAGE *************/
-.contact {
-  text-align: left;
-  padding-left: 1em;
-}
-
 .map {
   margin: 0;
   padding: 0;
