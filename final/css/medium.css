@@ -1,5 +1,5 @@
 @media only screen and (min-width: 32.5em) {
-  
+
   /************* HEADER *************/
 
   header {
@@ -9,7 +9,7 @@
   }
 
   /************* NAV BAR *************/
-  
+
   nav {
     position: relative;
     max-width: 100%;
@@ -38,7 +38,13 @@
   }
 
   /************* General things *************/
-  .content-box {
-    margin: .5em;
+  .side-by-side {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /************* CONTACT PAGE *************/
+  .map {
+    padding: .5em;
   }
 }

@@ -86,4 +86,12 @@
   .home-hero {
     display: none;
   }
+
+  #map-small {
+    display: none;
+  }
+
+  #map-big {
+    display: flex;
+  }
 }

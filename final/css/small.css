@@ -148,7 +148,27 @@ h6 {
 
 /************* HOME PAGE *************/
 
-.home-hero {
+.home-hero, 
+.side-by-side img {
   max-width: 100%;
   margin: auto;
+}
+
+.side-by-side ul{
+  text-align: left;
+}
+
+/************* CONTACT PAGE *************/
+.contact {
+  text-align: left;
+  padding-left: 1em;
+}
+
+.map {
+  margin: 0;
+  padding: 0;
+}
+
+#map-big {
+  display: none;
 }
