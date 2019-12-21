@@ -105,10 +105,10 @@ main {
   padding-left: 1em;
 }
 
-button {
+button, .button{
   background-color: #d7d1fd;
   border: outset #d7d1fd 2px;
-  margin: 0;
+  margin: .25em;
   padding: .25em;
 }
 
@@ -125,7 +125,7 @@ button:hover {
 }
 
 #content-wrap {
-  padding-bottom: 2.5rem;
+  padding-bottom: 3rem;
 }
 
 footer {
@@ -133,7 +133,7 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 2.5rem;
+  height: 3rem;
 }
 
 h1,
@@ -171,4 +171,34 @@ h6 {
 
 #map-big {
   display: none;
+}
+
+/************* RESERVATIONS PAGE *************/
+
+fieldset {
+  background-color: #f5e6ad;
+  border: solid #c7a633 1px;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+fieldset p {
+  margin: 0;
+  padding: .2em;
+}
+
+fieldset label {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1em;
+}
+
+.one-row {
+  display: inline;
+}
+
+.required {
+  color: darkred;
 }

@@ -35,7 +35,54 @@
       </nav>
 
       <main>
-        
+        <h2>Make a Reservation</h2>
+        <form method="get" action="reservation-confirmation.html">
+          <fieldset class="left-aligned">
+            <legend>Reservation Details</legend>
+            <label><span class="one-row">Temple<span class="required">*</span></span>
+              <select name="temple" required>
+                <option value="" disabled selected="selected">Select Temple...</option>
+                <option value="salt-lake">Salt Lake Temple</option>
+                <option value="phoenix">Phoenix Temple</option>
+                <option value="tucson">Tucson Temple</option>
+                <option value="oakland">Oakland Temple</option>
+              </select>
+            </label>
+            <label><span class="one-row">Start Date<span class="required">*</span></span><input type="date" name="start-date" required></label>
+            <label><span class="one-row">End Date<span class="required">*</span></span><input type="date" name="end-date" required></label>
+            <label><span class="one-row">Number of Rooms<span class="required">*</span></span>
+              <select name="num-rooms" required>
+                <option value="" disabled selected="selected">Select...</option>
+                <option value="1-room">1</option>
+                <option value="2-room">2</option>
+                <option value="3-room">3</option>
+                <option value="4-room">4</option>
+                <option value="5-room">5</option>
+              </select>
+            </label>
+            <label><span class="one-row">Type of Room<span class="required">*</span></span>
+              <select name="room-type" required>
+                <option value="" disabled selected="selected">Select...</option>
+                <option value="type-1">One Queen</option>
+                <option value="type-2">Two Queen</option>
+                <option value="type-3">Two Full</option>
+                <option value="type-4">Bunk Beds</option>
+                <option value="type-5">Extended Stay</option>
+              </select>
+            </label>
+            <p><sup><span class="required">*</span>Indicates a required field.</sup></p>
+          </fieldset>
+          <fieldset class="left-aligned">
+            <legend>Contact Information</legend>
+            <label><span class="one-row">Full name<span class="required">*</span></span><input type="text" name="name" required pattern="[A-Za-z ]{5,}"></label>
+            <label><span class="one-row">Email<span class="required">*</span></span><input type="email" name="email" required placeholder="john.doe@example.com"></label>
+            <label><span class="one-row">Phone number<span class="required">*</span></span><input type="tel" name="phone" required></label>
+            <label>Home State or Country<input type="text" name="home-state"></label>
+            <label>Special Accommodations/Comments<textarea name="comments" cols="38" rows="4"></textarea></label>
+            <p><sup><span class="required">*</span>Indicates a required field.</sup></p>
+          </fieldset>
+          <input type="submit" value="Place Reservation" class="button">
+        </form>
       </main>
     </div>
     <footer>
